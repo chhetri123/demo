@@ -3,6 +3,7 @@ module.exports = (err) => {
   const statusCode =
     err.statusCode ||
     StatusCodes.BAD_REQUEST ||
-    StatusCodes.INTERNAL_SERVER_ERROR;
+    StatusCodes.INTERNAL_SERVER_ERROR ||
+    StatusCodes.NOT_FOUND;
   return statusCode;
 };
